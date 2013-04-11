@@ -160,7 +160,7 @@ CDP message types.
 
 =head1 SEE ALSO
 
-L<Net::Frame::Layer::CDP>, L<Net::Frame::Layer>
+L<Net::Frame::Layer::CDP::Address>, L<Net::Frame::Layer::CDP::Capabilities>, L<Net::Frame::Layer::CDP::Duplex>, L<Net::Frame::Layer::CDP::TrustBitmap>, L<Net::Frame::Layer::CDP>, L<Net::Frame::Layer>
 
 =head1 AUTHOR
 

@@ -181,7 +181,7 @@ __END__
 
 =head1 NAME
 
-Net::Frame::Layer::CDP::Address - Address encoding for CDP Addresses TLV
+Net::Frame::Layer::CDP::Address - Address encoding for CDP addresses TLV
 
 =head1 SYNOPSIS
 
@@ -207,7 +207,7 @@ Net::Frame::Layer::CDP::Address - Address encoding for CDP Addresses TLV
 
 =head1 DESCRIPTION
 
-This modules implements the encoding and decoding addresses for the Addresses CDP message type.
+This modules implements the encoding and decoding addresses for the Addresses and ManagementAddresses CDP message type.
 
 =head1 ATTRIBUTES
 
@@ -223,7 +223,7 @@ Length of protocol value.
 
 =item B<protocol>
 
-Protocol value.  This is a pack('H*', $string) where B<$string> represents the protocol.  See B<CONSTANTS> for values.
+Protocol value.  This is a C<pack('H*', $string)> where B<$string> represents the protocol.  See B<CONSTANTS> for values.
 
 =item B<addressLength>
 
@@ -325,7 +325,7 @@ Protocols.
 
 =head1 SEE ALSO
 
-L<Net::Frame::Layer::CDP::Addresses>, L<Net::Frame::Layer::CDP>, L<Net::Frame::Layer>
+L<Net::Frame::Layer::CDP::Addresses>, L<Net::Frame::Layer::CDP::ManagementAddresses>, L<Net::Frame::Layer::CDP>, L<Net::Frame::Layer>
 
 =head1 AUTHOR
 

@@ -1,7 +1,7 @@
 #
-# $Id: Addresses.pm 1640 2013-03-28 17:58:27Z VinsWorldcom $
+# $Id: ManagementAddresses.pm 1640 2013-03-28 17:58:27Z VinsWorldcom $
 #
-package Net::Frame::Layer::CDP::Addresses;
+package Net::Frame::Layer::CDP::ManagementAddresses;
 use strict; use warnings;
 
 use Net::Frame::Layer qw(:consts :subs);
@@ -25,7 +25,7 @@ use Net::Frame::Layer::CDP::Constants qw(:consts);
 
 sub new {
    shift->SUPER::new(
-      type         => NF_CDP_TYPE_ADDRESSES,
+      type         => NF_CDP_TYPE_MANAGEMENT_ADDR,
       length       => 8,
       numAddresses => 0,
       addresses    => [],
@@ -132,15 +132,15 @@ __END__
 
 =head1 NAME
 
-Net::Frame::Layer::CDP::Addresses - CDP Addresses TLV
+Net::Frame::Layer::CDP::ManagementAddresses - CDP ManagementAddresses TLV
 
 =head1 SYNOPSIS
 
    use Net::Frame::Simple;
    use Net::Frame::Layer::CDP qw(:consts);
 
-   my $layer = Net::Frame::Layer::CDP::Addresses->new(
-      type         => NF_CDP_TYPE_ADDRESSES
+   my $layer = Net::Frame::Layer::CDP::ManagementAddresses->new(
+      type         => NF_CDP_TYPE_MANAGEMENT_ADDR
       length       => 8,
       numAddresses => 0,
       addresses    => [],
@@ -157,7 +157,7 @@ Net::Frame::Layer::CDP::Addresses - CDP Addresses TLV
 
 =head1 DESCRIPTION
 
-This modules implements the encoding and decoding of the Addresses CDP message type.
+This modules implements the encoding and decoding of the ManagementAddresses CDP message type.
 
 =head1 ATTRIBUTES
 
@@ -237,7 +237,7 @@ No constants here.
 
 =head1 SEE ALSO
 
-L<Net::Frame::Layer::CDP>, L<Net::Frame::Layer>
+L<Net::Frame::Layer::CDP::Address>, L<Net::Frame::Layer::CDP>, L<Net::Frame::Layer>
 
 =head1 AUTHOR
 

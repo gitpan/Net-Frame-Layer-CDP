@@ -92,6 +92,8 @@ sub print {
 
 __END__
 
+=head1 NAME
+
 Net::Frame::Layer::CDP::SoftwareVersion - CDP SoftwareVersion TLV
 
 =head1 SYNOPSIS

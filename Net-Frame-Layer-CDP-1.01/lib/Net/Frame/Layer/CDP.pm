@@ -4,7 +4,7 @@
 package Net::Frame::Layer::CDP;
 use strict; use warnings;
 
-our $VERSION = '1.00';
+our $VERSION = '1.01';
 
 use Net::Frame::Layer qw(:consts :subs);
 use Exporter;
@@ -406,7 +406,7 @@ L<Net::Frame::Layer>
 
 Michael Vincent
 
-ACKNOWLEDGEMENTS
+=head1 ACKNOWLEDGEMENTS
 
 Ported from the L<Net::Packet::CDP> modules by Patrice E<lt>GomoRE<gt> Auffret.
 
